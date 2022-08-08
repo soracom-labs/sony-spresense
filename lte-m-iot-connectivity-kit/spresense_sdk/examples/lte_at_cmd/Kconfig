@@ -1,0 +1,29 @@
+#
+# For a description of the syntax of this configuration file,
+# see the file kconfig-language.txt in the NuttX tools repository.
+#
+
+config EXAMPLES_LTE_AT_CMD
+	tristate "send at cmds"
+	default n
+	---help---
+		send at cmd example
+
+if EXAMPLES_LTE_AT_CMD
+
+config EXAMPLES_LTE_AT_CMD_PROGNAME
+	string "Program name"
+	default "lte_at_cmd"
+	---help---
+		This is the name of the program that will be use when the NSH ELF
+		program is installed.
+
+config EXAMPLES_LTE_AT_CMD_PRIORITY
+	int "LTE_AT_CMD task priority"
+	default 100
+
+config EXAMPLES_LTE_AT_CMD_STACKSIZE
+	int "LTE_AT_CMD save stack size"
+	default DEFAULT_TASK_STACKSIZE
+
+endif
