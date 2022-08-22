@@ -1,0 +1,3 @@
+ifneq ($(CONFIG_EXAMPLES_LTE_AT_CMD),)
+CONFIGURED_APPS += lte_at_cmd
+endif
