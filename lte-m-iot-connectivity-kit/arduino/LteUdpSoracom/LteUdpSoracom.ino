@@ -7,7 +7,7 @@
  * Copyright SORACOM
  * This software is released under the MIT License, and libraries used by these sketches 
  * are subject to their respective licenses.
- * See also: https://github.com/soracom-labs/soracom-spresense-lte-m-iot-connectivity-kit/blob/main/README.md
+ * See also: https://github.com/soracom-labs/sony-spresense/tree/main/lte-m-iot-connectivity-kit/arduino
  */
 
 // Libraries
