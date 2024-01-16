@@ -21,7 +21,7 @@
  *   consumption during the eDRX Cycle and confirm eDRX behavior
  * - Restart to re-attach to network and receive new eDRX and PTW values from Soracom (if changed)
  *
- * This ino file code should be flashed to Sony Spresense with LTE-M extension via Arduino SDK.
+ * This INO file code should be flashed to your Sony Spresense with LTE Extension board via Arduino SDK.
  *
  * For information on how to configure eDRX and PTW values in a Soracom group, please submit a support request
  * to the Soracom support team, or contact Soracom at: https://www.soracom.io/contact
@@ -72,7 +72,6 @@ LTEUDP lteUdp;
 
 char host[] = "harvest.soracom.io";           // Your server hostname
 int port = 8514;                              // Your server port
-int ad_value = 0;
 
 /**
  * eDRX Cycle (T-eDRX) lengths for S1 mode
